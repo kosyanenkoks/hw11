@@ -21,7 +21,7 @@ var promise = function ( imageFile ) {
                 reader.onload = function(event) {
                     resolve(this.result);
                 };
-                reader.readAsDataURL(selector.files[0]);
+                reader.readAsDataURL(imageFile);
             } else {
                 reject('Выбранный файл не является изображением')
             }
